@@ -40,4 +40,6 @@ target/
 .factorypath
 .settings
 
+### PyCharm ###
+__pycache__
 python/__pycache__
