@@ -43,3 +43,12 @@ target/
 ### PyCharm ###
 __pycache__
 python/__pycache__
+
+
+.DS_Store
+*/.DS_Store
+
+### Pytorch Model ###
+*.pth
+
+### dataset ###
