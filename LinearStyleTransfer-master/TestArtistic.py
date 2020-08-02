@@ -42,6 +42,8 @@ if __name__ == '__main__':
                         help='scale image size')
     parser.add_argument('--fineSize', type=int, default=256,
                         help='crop image size')
+    # parser.add_argument("--layer", default="r41",
+    #                     help='which features to transfer, either r31 or r41')
     parser.add_argument("--layer", default="r41",
                         help='which features to transfer, either r31 or r41')
 
@@ -122,7 +124,7 @@ if __name__ == '__main__':
                 transfer = dec(feature)
 
             transfer = transfer.clamp(0, 1)
-            vutils.save_image(transfer, '%s/%s_%s.png' % (opt.outf, contentName, styleName), normalize=True,
+            vutils.save_image(transfer, '%s/%s_%s_%s.png' % (opt.outf, contentName, styleName, opt.layer), normalize=True,
                               scale_each=True, nrow=opt.batchSize)
             print('Transferred image saved at %s%s_%s.png' % (opt.outf, contentName, styleName))
             end_time = time()

@@ -1,0 +1,1 @@
+训练好的模型文件需要从官方的库下载：[google drive](https://drive.google.com/file/d/1H9T5rfXGlGCUh04DGkpkMFbVnmscJAbs/view?usp=sharing).
